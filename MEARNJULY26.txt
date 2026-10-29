@@ -821,7 +821,22 @@ It is a collection of multiple values stored in a single variable,each value is 
             - Controlled components (Recommended) - React uses state to store inputs
             -Uncontrolled components : Components can directly access to real DOM element to fetch its data, using useRef hook
 
-16.API calling in REACT : Using fetch
+16.API calling in REACT : 
+    - Using "Fetch"
+    - Using Axios : used to make API call
+        - install Axios : npm install axios
+        - used to make common request configuration and interceptors
+        - axios interceptors : used to intercept request or response before they handled by then() or catch() method 
+          used for
+            - Global error handling
+            - Adding Loggin token / authentication
+            - Logging request / responses
+    SRC-->API Folder 
+          -->axiosInstance.js : used to create axios instance and add interceptors 
+          -->axiosService.js : used to make commin api call function
+    ------>Service Folder 
+          -->apiService.js : used to define api call and return output to component
+
 
 17. Routing : set up path / URL for a react component
             - use react-router-dom library to enable routing in react
@@ -835,3 +850,25 @@ It is a collection of multiple values stored in a single variable,each value is 
     3.Route : connects a URL path to a react component
     4.Path='/' : Matches the home URL
     5.element = {<component/>} : Tells react which component to render
+
+  - useNavigate : used to navigate from one page to another.this hook returns a function which is capable of redirecting from one page to another
+  - useParams : used to get dynamic values from the component url,it returns an object
+
+18. State Lifting : Lifting up the state means moving state from a child component to its closest common parent so that multiple components can share and synchronize the same data
+        in short : moving state to a common parent and sharing it with children through props
+
+19.    JSON SERVER creation
+  ----------------------------
+  -To store and manage JSON Type data via API call
+    - steps to create json server 
+      1. Create server folder
+      2. Create package.json file for project configuration-using command : npm init -y
+      3. Create a json file to store and manage data inside the folder
+      4. to run json file, use json server, to install json server use : npm i json-server
+      5. to run json file, use npx json-server json-file-name
+
+
+         SDLC(Software Development Life Cycle)
+-----------------------------------------------------
+    - It is a step by step process used to plan,design,develop,test and maintain software applications 
+    - Phases of SDLC : Requirement Analysis----> Planning----> System Design ----> Development ----> Testing ----> Deployment ----> Maintanence

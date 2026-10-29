@@ -9,7 +9,7 @@ function Home() {
       <div style={{ height: '100vh', background: 'url(/landing.png)', backgroundSize: 'cover', backgroundAttachment: 'fixed' }} className='d-flex justify-content-center align-items-center'>
         <div style={{ backgroundColor: 'rgba(0,0,0,0.4)' }} className='text-center rounded p-5 w-50 text-light'>
           <h1>Designed To Get Hired. Your Skills,Your Story,Your Next Job - All In One.</h1>
-          <Link to={'/resume'} style={{ backgroundColor: '#615652' }} className='btn text-light'>Make your RESUME with AI</Link>
+          <Link to={'/resume'} style={{ backgroundColor: '#672420' }} className='btn text-light'>Make your RESUME with AI</Link>
         </div>
 
       </div>
