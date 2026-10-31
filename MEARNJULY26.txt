@@ -867,8 +867,21 @@ It is a collection of multiple values stored in a single variable,each value is 
       4. to run json file, use json server, to install json server use : npm i json-server
       5. to run json file, use npx json-server json-file-name
 
+20. Deploy JSON Server 
+    - Create index.js file in server folder
+    - Inside index.js file define steps to run json-server using node
+      - import json-server package
+      - create server for running json file using json-server package
+      - set up the route/url for json file that should be run by the server
+      - parse the json data before node process.use a middleware in node js
+      - create port number to run app in server
+      - use json middleware in the server app
+      - use router in the server app
+      - run the server app in the given port,command for run the server app:node index.js
+        -update the package.json file scripts key "scripts":{"start":"node index.js"}
+
 
          SDLC(Software Development Life Cycle)
 -----------------------------------------------------
-    - It is a step by step process used to plan,design,develop,test and maintain software applications 
-    - Phases of SDLC : Requirement Analysis----> Planning----> System Design ----> Development ----> Testing ----> Deployment ----> Maintanence
+    1- It is a step by step process used to plan,design,develop,test and maintain software applications 
+    2- Phases of SDLC : Requirement Analysis----> Planning----> System Design ----> Development ----> Testing ----> Deployment ----> Maintanence
